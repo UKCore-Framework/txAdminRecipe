@@ -35,7 +35,6 @@ tasks:
     ref: main
     src: https://github.com/UKCore-Framework/connectqueue
 
-  
   - action: download_file
     path: ./tmp/files/oxmysql.zip
     url: https://github.com/overextended/oxmysql/releases/download/v2.9.1/oxmysql.zip
@@ -61,6 +60,9 @@ tasks:
     dest: ./resources/[standalone]/screenshot-basic
     ref: master
     src: https://github.com/citizenfx/screenshot-basic
+
+  - action: waste_time # prevent github throttling
+    seconds: 10
 
   
   # Clean up
