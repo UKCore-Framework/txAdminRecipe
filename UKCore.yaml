@@ -10,7 +10,6 @@ tasks:
   - action: download_github
     src: https://github.com/UKCore-Framework/txAdminRecipe
     ref: main
-    dest: ./tmp/ukcore
 
   - action: move_path
     src: ./tmp/ukcore/server.cfg
@@ -45,3 +44,8 @@ tasks:
   - action: unzip
     dest: ./resources/[standalone]
     src: ./tmp/files/ox_lib.zip
+
+  
+  # Clean up
+  - action: remove_path
+    path: ./tmp
