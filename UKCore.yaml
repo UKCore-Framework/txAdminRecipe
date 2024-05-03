@@ -15,10 +15,6 @@ tasks:
     src: ./tmp/ukcore/server.cfg
     dest: ./server.cfg
 
-  - action: move_path
-    src: ./tmp/ukcore/myLogo.png
-    dest: ./myLogo.png
-
   # Prepare Database
   - action: connect_database
   - action: query_database
