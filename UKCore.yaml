@@ -64,6 +64,12 @@ tasks:
   - action: waste_time # prevent github throttling
     seconds: 10
 
+  # Downloading UKCore resources
+  - action: download_github
+    dest: ./resources/[uk]/uk_anticheat
+    ref: main
+    src: https://github.com/UKCore-Framework/uk_anticheat
+
   
   # Clean up
   - action: remove_path
