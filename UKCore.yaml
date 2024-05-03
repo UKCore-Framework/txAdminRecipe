@@ -30,6 +30,11 @@ tasks:
     subpath: resources
     dest: ./resources/[cfx-default]
 
+  - action: download_github
+    dest: ./resources/[standalone]/connectqueue
+    ref: main
+    src: https://github.com/UKCore-Framework/connectqueue
+
   
   - action: download_file
     path: ./tmp/files/oxmysql.zip
